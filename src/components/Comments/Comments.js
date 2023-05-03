@@ -9,6 +9,11 @@ const Comments = props => {
 
   return (
     <div>
+      {comments.map((comment) =>{
+        return (
+          <Comment comment={comment}/>
+        )
+      })}
       {/* map through the comments prop and render a Comment for every piece of data */}
       {/* Dulmar prop-ka 'comments', kadib soo celi 'Comment' component, adigoo waxa ay 'Comment' u baahantahay u diraayo. */}
     </div>
